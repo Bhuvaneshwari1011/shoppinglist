@@ -6,6 +6,135 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/style.css">
   <title>CRUD-APP</title>
+  <style>
+    
+body {
+    background: url("https://static.vecteezy.com/system/resources/thumbnails/012/181/357/original/fast-delivery-by-scooter-and-van-and-plane-on-mobile-e-commerce-concept-online-order-with-shopping-cart-and-many-box-on-pink-background-3d-animation-loop-video.jpg") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 2rem;
+    /* Adjust font size as needed */
+    text-align: center;
+    color: rgb(60, 40, 92);
+    /* White color for text */
+    border: 2px solid #333;
+    /* Dark border for classic look */
+    background: linear-gradient(135deg, #ff6f61, #de6262);
+    /* Classic gradient background */
+    padding: 15px 20px;
+    margin: 0;
+    width: fit-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(0);
+    /* No vertical movement */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    /* Enhanced shadow for a classic 3D effect */
+    border-radius: 5px;
+    /* Rounded corners */
+    animation: moveLeftRight 15s linear infinite;
+    /* Adjusted animation duration */
+}
+
+@keyframes moveLeftRight {
+    0% {
+        transform: translateX(-100%);
+        /* Start off-screen to the left */
+    }
+
+    50% {
+        transform: translateX(calc(100vw - 100%));
+        /* Move to the right edge of the viewport */
+    }
+
+    100% {
+        transform: translateX(-100%);
+        /* Return to the left edge */
+    }
+}
+
+
+
+
+table {
+    width: 80%;
+    margin: 80px auto;
+    background: #fff;
+    color: #333;
+    border-radius: 5px;
+    border-collapse: collapse;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s ease, box-shadow 0.5s ease; /* Smooth transition */
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    transition: background-color 0.5s ease; /* Smooth transition for background */
+}
+
+table th {
+    background-image: linear-gradient(45deg, #f4f4f4, #d3d3d3);
+    transition: background 0.5s ease; /* Smooth transition for gradient */
+}
+
+table th:hover {
+    background-image: linear-gradient(45deg, #007bff, #00d4ff); /* Gradient change on hover */
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-image: linear-gradient(45deg, #007bff, #00d4ff);
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 5px;
+    transition: background 0.5s ease; /* Smooth background transition */
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-image: linear-gradient(45deg, #0056b3, #00a3ff);
+}
+
+button {
+    background-image: linear-gradient(45deg, #28a745, #6bff57);
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 5px;
+    transition: background 0.5s ease; /* Smooth background transition */
+}
+
+button:hover {
+    background-image: linear-gradient(45deg, #218838, #44ff82);
+}
+
+  </style>
 </head>
 
 <body>
