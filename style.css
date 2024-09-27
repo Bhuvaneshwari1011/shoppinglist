@@ -4,80 +4,81 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
 }
 
-h1 {
+h4 {
     font-size: 2rem;
-    /* Adjust font size as needed */
     text-align: center;
-    color: rgb(60, 40, 92);
-    /* White color for text */
-    border: 2px solid #333;
-    /* Dark border for classic look */
-    background: linear-gradient(135deg, #ff6f61, #de6262);
-    /* Classic gradient background */
-    padding: 15px 20px;
+    color: rgb(68, 9, 37);
+    border: 2px ridge #ccc8c8;
+    background: linear-gradient(135deg, #f3f1fc, #de6262);
+    padding: 6px 6px;
     margin: 0;
     width: fit-content;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0%;
+    left: 0%;
     transform: translateY(0);
-    /* No vertical movement */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    /* Enhanced shadow for a classic 3D effect */
+    box-shadow: 0 0 15px rgba(184, 158, 158, 0.5);
     border-radius: 5px;
-    /* Rounded corners */
     animation: moveLeftRight 15s linear infinite;
-    /* Adjusted animation duration */
 }
 
 @keyframes moveLeftRight {
     0% {
-        transform: translateX(-100%);
-        /* Start off-screen to the left */
+        transform: translateX(-90%);
     }
 
     50% {
         transform: translateX(calc(100vw - 100%));
-        /* Move to the right edge of the viewport */
     }
 
     100% {
         transform: translateX(-100%);
-        /* Return to the left edge */
     }
 }
 
-
-
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 90vh;
+}
 
 table {
-    width: 80%;
-    margin: 80px auto;
+    width: 45%;
     background: #fff;
     color: #333;
     border-radius: 5px;
     border-collapse: collapse;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.5s ease, box-shadow 0.5s ease; /* Smooth transition */
+    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+    margin: 20px;
+    overflow: hidden;
 }
 
 table th,
 table td {
-    border: 1px solid #ddd;
-    padding: 10px;
+    border: 1px solid #e4dede;
+    padding: 20px;
     text-align: left;
-    transition: background-color 0.5s ease; /* Smooth transition for background */
+    transition: background-color 0.5s ease;
 }
 
 table th {
     background-image: linear-gradient(45deg, #f4f4f4, #d3d3d3);
-    transition: background 0.5s ease; /* Smooth transition for gradient */
+    transition: background 0.5s ease;
 }
 
 table th:hover {
-    background-image: linear-gradient(45deg, #007bff, #00d4ff); /* Gradient change on hover */
+    background-image: linear-gradient(45deg, #007bff, #00d4ff);
 }
 
 input[type="text"],
@@ -87,7 +88,7 @@ input[type="number"] {
     margin: 5px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: #fff;
+    background-color: #ecdfdf;
 }
 
 input[type="submit"],
@@ -100,7 +101,7 @@ input[type="reset"] {
     cursor: pointer;
     font-size: 1rem;
     margin: 5px;
-    transition: background 0.5s ease; /* Smooth background transition */
+    transition: background 0.5s ease;
 }
 
 input[type="submit"]:hover,
@@ -117,7 +118,7 @@ button {
     cursor: pointer;
     font-size: 1rem;
     margin: 5px;
-    transition: background 0.5s ease; /* Smooth background transition */
+    transition: background 0.5s ease;
 }
 
 button:hover {
